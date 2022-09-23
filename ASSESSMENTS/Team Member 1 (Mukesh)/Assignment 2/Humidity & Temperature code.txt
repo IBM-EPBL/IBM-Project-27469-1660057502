@@ -1,0 +1,13 @@
+import random
+from time import * 
+flag=True
+while(flag):
+    temp = random.randint(0,50)
+    humi = random.randint(10,50)
+    if temp>45 and humi<30:
+        print("Ambient Temperature =",temp,"Ambient Humidity =",humi)
+        print("---------------------ALARM ON----------------------")
+        flag=False
+    else:
+        print("Ambient Temperature =",temp,"Ambient Humidity",humi)
+        sleep(0.5);
