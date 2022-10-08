@@ -1,0 +1,8 @@
+from gpiozero import LED
+
+red = LED(22)
+amber = LED(27)
+
+
+red.blink(1, 1)
+amber.blink(2, 2)
